@@ -161,7 +161,8 @@ Example Request Body:
         "deleted_at": null
     },
     ...
-  ]```
+  ]
+  ```
 
   Delete by ID
   `DELETE /api/emails/{id}`
