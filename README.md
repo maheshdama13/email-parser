@@ -47,12 +47,12 @@ The email parsing command runs automatically every hour. To manually run it:
   php artisan emails:parse-and-extract
   ```
 
-
+__________
 ### API Endpoints
 #### Authentication
 Use Sanctum for API authentication. Generate a token for demo user.
 
-`POST /api/tokens/create`
+1. `POST /api/tokens/create`
 Response Body:
 ```json
 {
@@ -65,7 +65,8 @@ e.g.
 
 `Authorization: Bearer 1|6yHlUoQ98l3YPiiQSAwAoCKpeGnLhTavUma8NUe9022d70ae`
 
-`POST /api/emails`
+
+2. `POST /api/emails`
 Example Request Body:
   ```json
   {
@@ -83,7 +84,7 @@ Example Request Body:
   }
   ```
 
-  Get by ID
+  3. Get by ID
   `GET /api/emails/{id}`
   Example Response:
   ```json
@@ -107,7 +108,7 @@ Example Request Body:
   }
   ```
 
-  Update
+  4. Update
   `PUT /api/emails/{id}`
   Example Request Body:
   ```json
@@ -138,7 +139,7 @@ Example Request Body:
   }
   ```
 
-  Get All
+  5. Get All
   `GET /api/emails`
   Example Response:
   ```json
@@ -165,7 +166,7 @@ Example Request Body:
   ]
   ```
 
-  Delete by ID
+  6. Delete by ID
   `DELETE /api/emails/{id}`
   Example Response:
   ```json
