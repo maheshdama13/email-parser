@@ -51,6 +51,7 @@ The email parsing command runs automatically every hour. To manually run it:
 ### API Endpoints
 #### Authentication
 Use Sanctum for API authentication. Generate a token for demo user.
+
 `POST /api/tokens/create`
 Response Body:
 ```json
